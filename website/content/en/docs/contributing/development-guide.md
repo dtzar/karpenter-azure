@@ -8,8 +8,19 @@ description: >
 
 ### iframe docsy github source
 
-{{%iframe src="https://github.com/Azure/karpenter/blob/main/README.md" %}}
+Commented out
+<!-- {{%iframe src="https://github.com/Azure/karpenter/blob/main/README.md" %}} -->
 
 ### iframe docsy karpenter.sh
 
-{{%iframe src="https://karpenter.sh/docs/contributing/development-guide/" %}}
+Commented out
+<!-- {{%iframe src="https://karpenter.sh/docs/contributing/development-guide/" %}} -->
+
+### read local repo file github source
+
+Commented out
+<!-- {{% script file="./README.md" language="markdown"%}} -->
+
+### embed docsy github source
+
+{{% embed-remote-md "https://raw.githubusercontent.com/aws/karpenter/main/website/content/en/docs/contributing/development-guide.md" %}}
