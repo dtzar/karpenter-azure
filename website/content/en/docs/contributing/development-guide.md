@@ -23,4 +23,4 @@ Commented out
 
 ### embed docsy github source
 
-{{% embed-remote-md "https://raw.githubusercontent.com/aws/karpenter/main/website/content/en/docs/contributing/development-guide.md" %}}
+{{< embed-remote-md "https://raw.githubusercontent.com/aws/karpenter/main/website/content/en/docs/contributing/development-guide.md" >}}
