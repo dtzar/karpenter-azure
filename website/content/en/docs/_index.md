@@ -14,7 +14,7 @@ Karpenter works by:
 * **Provisioning** nodes that meet the requirements of the pods
 * **Disrupting** the nodes when the nodes are no longer needed
 
-As someone using Karpenter, once your Kubernetes cluster and the Karpenter controller are up and running (see [Getting Started]({{<ref "./getting-started" >}})), you can:
+As someone using Karpenter, once your Kubernetes cluster and the Karpenter controller are up and running you can:
 
 * **Set up NodePools**: By applying a NodePool to Karpenter, you can configure constraints on node provisioning and set values for node expiry, node consolidastion, or Kubelet configuration values.
   NodePool-level constraints related to Kubernetes and your cloud provider include:
@@ -33,5 +33,3 @@ As someone using Karpenter, once your Kubernetes cluster and the Karpenter contr
   - Tolerations (`tolerations`): Identify that a pod must match (tolerate) a taint on a node before the pod will run on it. Without the toleration, the effect set by the taint occurs (NoSchedule, PreferNoSchedule, or NoExecute). See Kubernetes [Taints and Tolerations](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/) for details.
   - Topology spread (`topologySpreadConstraints`): Request that pods be spread across zones (`topology.kubernetes.io/zone`) or hosts (`kubernetes.io/hostname`), or cloud provider capacity types (`karpenter.sh/capacity-type`). See [Pod Topology Spread Constraints](https://kubernetes.io/docs/concepts/workloads/pods/pod-topology-spread-constraints/) for details.
   - Persistent volume topology: Indicate that the Pod has a storage requirement that requires a node running in a particular zone that can make that storage available to the node.
-
-Learn more about Karpenter and how to get started below.
